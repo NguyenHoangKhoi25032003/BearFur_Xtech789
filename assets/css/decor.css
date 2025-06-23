@@ -1,0 +1,412 @@
+/* Kiểu chung */
+.decor-section {
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  width: 98vw;
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: #fbf9f9;
+  margin-top: 10px;
+  height: auto;
+  padding: 0px;
+}
+
+.decor-image-wrapper {
+  position: relative;
+  flex: 1 1 90%;
+  min-width: 300px;
+}
+
+.decor-image-wrapper img {
+  width: 100%;
+  height: auto;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.05);
+  object-fit: cover;
+}
+
+.hotspot {
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  background: #f5a06d;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  box-shadow: 0 0 0 2px #f5a06d;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+  touch-action: manipulation;
+}
+
+.hotspot:hover {
+  transform: scale(1.2);
+}
+
+.decor-info {
+  flex: 1 1 30%;
+  min-width: 250px;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.decor-info h2 {
+  font-size: 1.8rem;
+  font-weight: lighter;
+  margin-bottom: 4px;
+}
+
+.decor-info p {
+  text-align: center;
+  font-size: 0.9rem;
+  color: #888;
+  margin: 0 auto 12px;
+  max-width: 280px;
+  word-wrap: break-word;
+  line-height: 1.4;
+}
+
+.discount {
+  position: absolute;
+  top: 12px; /* Tăng khoảng cách để cân đối với thẻ lớn hơn */
+  left: 12px;
+  background: #f15c3e;
+  color: white;
+  padding: 6px 10px; /* Tăng padding để cân đối */
+  font-size: 0.9rem; /* Tăng kích thước chữ */
+  border-radius: 4px;
+  font-weight: bold;
+  z-index: 1;
+}
+
+.icon-btn:hover {
+  background: #f5a06d;
+  color: white;
+}
+
+.product-info {
+  text-align: left;
+  padding: 12px; /* Tăng padding cho thẻ lớn hơn */
+}
+
+.product-name {
+  font-size: 1.1rem; /* Tăng kích thước chữ cho cân đối */
+  font-weight: 500;
+}
+
+.price {
+  font-size: 1rem;
+  margin-top: 4px;
+  text-align: left;
+}
+
+.original-price {
+  font-size: 0.9rem;
+  margin-left: 5px;
+  text-align: start;
+}
+
+.dots {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 6px;
+}
+
+.dot {
+    width: 30px; /* Tăng kích thước để giống hình */
+    height: 10px; /* Chiều cao nhỏ hơn để tạo hình elip */
+    background: #d1d5db; /* Màu xám nhạt cho nút không active */
+    border-radius: 5px; /* Bo tròn để tạo hình elip */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.dot.active {
+    background: #f5a06d; /* Màu cam cho nút active */
+}
+
+.nav-btn {
+  background-color: #f5a06d;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+  font-weight: bold;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s, box-shadow 0.3s;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.nav-btn:hover {
+  background-color: #e68a50;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+}
+
+.card_product_decor {
+  width: 280px; /* Tăng chiều rộng từ 240px */
+  scroll-snap-align: start;
+  border: 1px solid #eee;
+  border-radius: 10px;
+  background: #fff;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  transition: transform 0.5s ease;
+  margin: 0 auto;
+  position: relative;
+}
+.card_product_decor.active {
+    opacity: 1; /* Hiển thị sản phẩm active */
+    transform: translateX(0); /* Vị trí mặc định */
+}
+.card_product_decor:hover {
+  transform: translateY(-5px);
+}
+
+.card_product_decor img {
+  width: 100%;
+  height: 210px; /* Tăng chiều cao từ 180px */
+  object-fit: cover;
+  border-bottom: 1px solid #eee;
+  transition: transform 0.3s ease;
+}
+.text-danger {
+  margin-top: 20px !important;
+   text-align: left !important;
+  color: #dc3545 !important; /* Màu đỏ đậm */
+  font-size: 20px !important;
+  font-style: italic !important
+  
+}
+.fw-bold {
+  font-weight: bold !important;
+}
+.text-decoration-line-through {
+  text-decoration: line-through !important;
+}
+.text-muted {
+  color: #6c757d !important; /* Màu xám nhạt */
+}
+.card_product_decor:hover img {
+  transform: scale(1.1);
+}
+
+.product-icons_decor {
+  position: absolute;
+  top: 14px; /* Tăng khoảng cách để cân đối */
+  right: 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px; /* Tăng gap cho thẻ lớn hơn */
+  z-index: 1;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.card_product_decor:hover .product-icons_decor {
+  opacity: 1;
+  visibility: visible;
+}
+
+.icon-btn_decor {
+  background: white;
+  border: none;
+  border-radius: 50%;
+  padding: 5px; /* Tăng padding nhẹ */
+  font-size: 0.85rem; /* Tăng kích thước biểu tượng */
+  width: 30px; /* Tăng kích thước nút */
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.icon-btn_decor:hover {
+  background: #f5a06d;
+  color: white;
+}
+
+.decor-carousel-wrapper {
+    overflow: hidden; /* Ẩn các phần tử vượt ra ngoài */
+    width: 100%;
+    position: relative;
+}
+
+.decor-carousel {
+    display: flex; /* Sắp xếp các sản phẩm theo hàng ngang */
+    width: 100%; /* Đảm bảo chiều rộng đủ cho tất cả sản phẩm */
+    transition: transform 0.5s ease; /* Hiệu ứng trượt mượt mà */
+    position: relative; /* Đặt làm tham chiếu cho các phần tử con */
+    scroll-snap-type: x mandatory; /* Giữ snap nếu cần */
+    -webkit-overflow-scrolling: touch; /* Tối ưu cho cảm ứng */
+}
+
+/* Media Queries cho các kích thước màn hình */
+
+/* Màn hình nhỏ (điện thoại, < 576px) */
+@media (max-width: 576px) {
+  .decor-section {
+    flex-direction: column;
+    gap: 10px;
+    padding: 5px;
+  }
+
+  .decor-image-wrapper {
+    flex: 1 1 100%;
+    min-width: 100%;
+  }
+
+  .hotspot {
+    width: 14px;
+    height: 14px;
+  }
+
+  .decor-info {
+    flex: 1 1 100%;
+    min-width: 100%;
+    margin-top: 10px;
+  }
+
+  .decor-info h2 {
+    font-size: 1.5rem;
+  }
+
+  .decor-info p {
+    font-size: 0.8rem;
+    max-width: 100%;
+  }
+
+  .card_product_decor {
+    width: 230px; /* Tăng từ 200px */
+  }
+
+  .card_product_decor img {
+    height: 180px; /* Tăng từ 160px */
+  }
+
+  .discount {
+    font-size: 0.8rem; /* Tăng nhẹ cho mobile */
+    padding: 5px 8px;
+  }
+
+  .product-icons_decor {
+    top: 100px;
+    right: 10px;
+    opacity: 1; /* Hiển thị luôn trên mobile */
+    visibility: visible;
+  }
+
+  .icon-btn_decor {
+    width: 26px; /* Tăng nhẹ từ 24px */
+    height: 26px;
+    font-size: 0.8rem;
+  }
+
+  .nav-btn {
+    width: 28px;
+    height: 28px;
+    font-size: 14px;
+  }
+}
+
+/* Màn hình trung (máy tính bảng, 576px - 768px) */
+@media (min-width: 577px) and (max-width: 768px) {
+  .decor-section {
+    gap: 15px;
+  }
+
+  .decor-image-wrapper {
+    flex: 1 1 55%;
+  }
+
+  .decor-info {
+    flex: 1 1 35%;
+    min-width: 200px;
+  }
+
+  .card_product_decor {
+    width: 250px; /* Tăng từ 220px */
+  }
+
+  .card_product_decor img {
+    height: 190px; /* Tăng từ 170px */
+  }
+
+  .discount {
+    font-size: 0.85rem;
+    padding: 5px 8px;
+  }
+
+  .product-icons_decor {
+    top: 12px;
+    right: 12px;
+  }
+
+  .icon-btn_decor {
+    width: 28px;
+    height: 28px;
+    font-size: 0.85rem;
+  }
+}
+
+/* Màn hình lớn (máy tính để bàn, > 768px) */
+@media (min-width: 769px) {
+  .decor-section {
+    flex-wrap: nowrap;
+  }
+}
+.product-popup {
+    display: none;
+    position: absolute;
+    background: #f7f5f5;
+    padding: 10px;
+    border: 1px solid #ddd;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    max-width: 400px; /* Giữ chiều rộng đủ để hiển thị */
+    border-radius: 8px; /* Bo góc giống hình */
+    background-color: rgba(253, 247, 247, 0.1); /* Nền xám nhạt giống hình */
+    font-size: 14px;
+    display: flex; /* Sử dụng flex để sắp xếp ngang */
+    align-items: center; /* Căn giữa theo chiều dọc */
+    gap: 10px; /* Khoảng cách giữa ảnh và thông tin */
+}
+
+.product-popup img {
+    max-width: 100px;
+    max-height: 100px;
+    margin: 0;
+    border-radius: 4px; /* Bo góc nhẹ cho ảnh */
+}
+
+.product-popup .popup-product-details {
+    flex: 1; /* Cho phép phần thông tin chiếm không gian còn lại */
+    display: flex; /* Sắp xếp tên và giá ngang hàng */
+    flex-direction: column; /* Sắp xếp tên và giá theo cột */
+    justify-content: center; /* Căn giữa theo chiều dọc */
+}
+
+.product-popup .popup-product-details h4 {
+    margin: 0 0 5px 0;
+    font-size: 16px;
+    color: #333;
+    white-space: normal; /* Cho phép xuống dòng */
+    overflow: visible; /* Không cắt chữ */
+    text-overflow: clip; /* Không dùng ellipsis */
+    max-width: 250px; /* Đảm bảo tên hiển thị đầy đủ */
+    line-height: 1.2; /* Đảm bảo dòng chữ dễ đọc */
+}
+
+.product-popup .popup-product-details p {
+    margin: 0;
+    color: #dc3545; /* Màu đỏ cho giá giống hình */
+    font-weight: bold;
+    font-size: 16px;
+    white-space: nowrap; /* Giữ giá trên một dòng */
+}

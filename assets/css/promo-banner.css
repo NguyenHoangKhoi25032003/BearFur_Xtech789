@@ -1,0 +1,147 @@
+/* Phong cách cho Banner Quảng Cáo */
+.promo-banner {
+    position: relative;
+    padding: 40px 0;
+    min-height: 300px; /* Giữ chiều cao tối thiểu */
+    display: flex; /* Sử dụng flexbox */
+  
+    background-color: #f5f5f5;
+}
+
+.promo-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    z-index: 0;
+    transition: background-image 1s ease;
+    background-image: url('assets/img/logo.webp');
+  
+}
+
+.promo-content {
+    position: relative;
+    z-index: 1;
+    background-color: rgba(148, 144, 144, 0.1);
+   
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 50px;
+    max-width: 600px;
+    text-align: left;
+    opacity: 1;
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+    
+}
+
+.promo-content.fade-out {
+    opacity: 0;
+    transform: translateY(20px);
+}
+
+.promo-content h2 {
+    color: #f4a261;
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.promo-content h1 {
+    font-size: 2.5em;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 15px;
+    line-height: 1.2;
+}
+
+.promo-content p {
+    font-size: 1em;
+    color: #666;
+    margin-bottom: 20px;
+    line-height: 1.5;
+}
+
+.btn {
+    background-color: #f4a261;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 25px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #e07a5f;
+}
+
+.promo-image {
+    height: 300px;
+    width: 300px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url('assets/img/cate_1_img.webp'); /* Thay bằng đường dẫn ảnh ghế */
+}
+
+/* Điều chỉnh container */
+.container {
+    max-width: 100vw; /* Đặt max-width hợp lý */
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.row.align-items-center {
+    margin-left: 0;
+    display: flex;
+    align-items: center; /* Căn giữa theo chiều dọc */
+    justify-content: flex-start; /* Đẩy sang bên trái */
+    min-height: 400px; /* Đảm bảo chiều cao đủ để căn giữa */
+}
+
+.col-md-6 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Căn giữa theo chiều dọc trong cột */
+    align-items: flex-start; /* Căn trái theo chiều ngang trong cột */
+}
+
+/* Thiết kế đáp ứng */
+@media (max-width: 768px) {
+    .promo-image {
+        height: 200px;
+        width: 200px;
+        margin-top: 20px;
+    }
+    .promo-content h1 {
+        font-size: 2em;
+    }
+    .promo-content {
+        max-width: 100%;
+    }
+    .promo-banner {
+        min-height: 400px;
+        flex-direction: column; /* Xếp dọc trên màn hình nhỏ */
+        justify-content: center; /* Căn giữa theo chiều dọc */
+    }
+    .row.align-items-center {
+        justify-content: center; /* Căn giữa trên màn hình nhỏ */
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    .promo-image {
+        height: 250px;
+        width: 250px;
+    }
+    .promo-content {
+        max-width: 350px;
+    }
+    .promo-banner {
+        min-height: 350px;
+    }
+}
