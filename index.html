@@ -18,98 +18,15 @@
     <link rel="stylesheet" href="assets/css/intargamr.css">
     <link rel="stylesheet" href="assets/css/danhgia.css">
     <link rel="stylesheet" href="assets/css/tintuc.css">
+    <link rel="stylesheet" href="assets/css/modal.css">
 
 </head>
 
 <body>
-    <header class="header">
-        <div class="container-fluid">
-            <div class="logo">
-                <img src="assets/img/logo.webp" alt="Logo">
-            </div>
+    <!-- <div id="header">
 
-            <!-- Navmenu cho desktop -->
-            <nav class="navmenu">
-                <ul>
-                    <li><a href="#">Trang chủ</a></li>
-                    <li><a href="#">Giới thiệu</a></li>
-                    <li class="dropdown">
-                        <a href="#">Sản phẩm</a>
-                        <div class="dropdown-menu">
-                            <div class="dropdown-column">
-                                <span class="column-title">Đèn trang trí</span>
-                                <ul>
-                                    <li><a href="#">Đèn chùm</a></li>
-                                    <li><a href="#">Đèn âm trần</a></li>
-                                    <li><a href="#">Đèn thả trần</a></li>
-                                    <li><a href="#">Đèn cây - đèn bàn</a></li>
-                                </ul>
-                            </div>
-                            <div class="dropdown-column">
-                                <span class="column-title">Đồ trang trí</span>
-                                <ul>
-                                    <li><a href="#">Kệ sách</a></li>
-                                    <li><a href="#">Đồng hồ treo tường</a></li>
-                                    <li><a href="#">Bàn ghế Sofa</a></li>
-                                    <li><a href="#">Khung tranh ảnh</a></li>
-                                </ul>
-                            </div>
-                            <div class="dropdown-column">
-                                <span class="column-title">Đồ nội thất</span>
-                                <ul>
-                                    <li><a href="#">Nội thất phòng khách</a></li>
-                                    <li><a href="#">Nội thất phòng bếp</a></li>
-                                    <li><a href="#">Nội thất phòng ngủ</a></li>
-                                    <li><a href="#">Nội thất phòng tắm</a></li>
-                                </ul>
-                            </div>
-                            <div class="dropdown-column">
-                                <span class="column-title">Thiết bị vệ sinh</span>
-                                <ul>
-                                    <li><a href="#">Bồn tắm</a></li>
-                                    <li><a href="#">Vòi sen</a></li>
-                                    <li><a href="#">Vòi Lavabo</a></li>
-                                    <li><a href="#">Chậu Lavabo</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </li>
-                    <li><a href="#">Hệ thống</a></li>
-                    <li><a href="#">Tin tức</a></li>
-                    <li><a href="#">Liên hệ</a></li>
-                </ul>
-            </nav>
-            <!-- Navmenu mới cho mobile -->
-            <div class="modal-overlay" id="mobile-nav-modal">
-                <div class="modal-content">
-                    <button class="modal-close" id="modal-close">×</button>
-                    <h2 class="modal-title">Danh Mục Sản Phẩm</h2>
-                    <nav class="modal-menu">
-                        <ul>
-                            <li><a href="#">Trang Chủ</a></li>
-                            <li><a href="#">Giới Thiệu</a></li>
-                            <li><a href="#">Hệ Thống</a></li>
-                            <li class="modal-dropdown">
-                                <a href="#" class="modal-product-toggle">Sản Phẩm <span class="toggle-icon">+</span></a>
-                                <ul class="modal-sub-menu"></ul>
-                            </li>
-                            <li><a href="#">Tin Tức</a></li>
-                            <li><a href="#">Liên Hệ</a></li>
-                        </ul>
-                    </nav>
-                </div>
-            </div>
-            <div class="header-controls">
-                <div class="mobile-nav-toggle">☰</div>
-                <div class="header-actions">
-                    <a href="#" class="search-icon" title="Tìm kiếm"><i class="bi bi-search"></i></a>
-                    <a href="#" class="user-icon" title="Tài khoản"><i class="bi bi-person"></i></a>
-                    <a href="#" class="cart-icon" title="Yêu thích"><i class="bi bi-heart"></i><span>0</span></a>
-                    <a href="#" class="cart-icon" title="Giỏ hàng"><i class="bi bi-cart"></i><span>0</span></a>
-                </div>
-            </div>
-        </div>
-    </header>
+    </div> -->
+<div id="header-placeholder"></div>
     <section class="promo-banner position-relative">
         <div class="promo-background"></div>
         <div class="container">
@@ -499,81 +416,69 @@
         </div>
     </section>
 
+    <!-- Modal hiển thị chi tiết sản phẩm -->
+    <div class="modal" id="product-modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <div class="modal-body">
+                <div class="modal-image">
+                    <img id="modal-image" src="" alt="Sản phẩm">
+                </div>
+                <div class="modal-info">
+                    <h2 id="modal-title"></h2>
+                    <p class="modal-price">
+                        <span id="modal-price"></span>
+                        <span id="modal-original-price" class="old-price"></span>
+                    </p>
+                    <p class="modal-description" id="modal-description"></p>
+                    <div class="modal-quantity">
+                        <label>Số lượng:</label>
+                        <button id="decrease-qty">-</button>
+                        <span id="modal-quantity">1</span>
+                        <button id="increase-qty">+</button>
+                    </div>
+                    <button class="add-to-cart-btn">Thêm vào giỏ hàng</button>
+                </div>
+            </div>
+        </div>
+    </div>
 
 
 
     <!-- Footer -->
-    <footer>
-        <div class="footer-container">
-            <!-- Cột 1 -->
-            <div class="footer-col">
-                <h4>BEAN FURNITURE</h4>
-                <p>Với sứ mệnh "Khách hàng là ưu tiên số 1" chúng tôi luôn mang lại giá trị tốt nhất</p>
-                <p><strong>Địa chỉ:</strong> 70 Lữ Gia, Phường 15, Quận 11, TP.HCM</p>
-                <p><strong>Điện thoại:</strong> <span style="color:#f5a06d;">1900 6750</span></p>
-                <p><strong>Email:</strong> support@sapo.vn</p>
-                <div class="footer-icons">
-                    <a href="#"><i class="bi bi-facebook"></i></a>
-                    <a href="#"><i class="bi bi-twitter"></i></a>
-                    <a href="#"><i class="bi bi-youtube"></i></a>
-                    <a href="#"><i class="bi bi-instagram"></i></a>
-                </div>
-            </div>
+    <div id="footer"></div>
 
-            <!-- Cột 2 -->
-            <div class="footer-col">
-                <h4>CHÍNH SÁCH</h4>
-                <a href="#">Chính sách thành viên</a>
-                <a href="#">Chính sách thanh toán</a>
-                <a href="#">Chính sách đổi sản phẩm</a>
-                <a href="#">Chính sách bảo mật</a>
-                <a href="#">Chính sách cộng tác viên</a>
-            </div>
-
-            <!-- Cột 3 -->
-            <div class="footer-col">
-                <h4>HƯỚNG DẪN</h4>
-                <a href="#">Hướng dẫn mua hàng</a>
-                <a href="#">Hướng dẫn đổi trả</a>
-                <a href="#">Hướng dẫn thanh toán</a>
-                <a href="#">Chương trình cộng tác viên</a>
-                <a href="#">Giải đáp thắc mắc</a>
-            </div>
-
-            <!-- Cột 4 -->
-            <div class="footer-col">
-                <h4>ĐĂNG KÝ NHẬN TIN</h4>
-                <p>Đăng ký ngay! Để nhận thật nhiều ưu đãi</p>
-                <form class="newsletter-form">
-                    <input type="email" placeholder="Nhập địa chỉ email" required />
-                    <button type="submit">ĐĂNG KÝ</button>
-                </form>
-                <h4>HÌNH THỨC THANH TOÁN</h4>
-                <div class="payment-methods">
-                    <img src="assets/img/payment_1.webp" alt="Tiền mặt" />
-                    <img src="assets/img/payment_2.webp" alt="Chuyển khoản" />
-                    <img src="assets/img/payment_3.webp" alt="Visa" />
-                    <img src="assets/img/payment_4.webp" alt="MasterCard" />
-
-                </div>
-            </div>
-        </div>
-
-        <div class="footer-bottom">
-            © Bản quyền thuộc về <strong>Mr. Bean</strong> | Cung cấp bởi Sapo
-        </div>
-    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/data.js"></script>
+    <script src="assets/js/decor.js"></script>
+    <script src="assets/js/decor_page.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/nt_page.js"></script>
+    <script src="assets/js/nt_product.js"></script>
+    <script src="assets/js/product-section.js"></script>
+    <script src="assets/js/product_top.js"></script>
+    <script src="assets/js/promo-banner.js"></script>
+    <script src="assets/js/sales.js"></script>
+    <script src="assets/js/product/modal.js"></script>
 
 
-    <script src="nt_page.js"></script>
-    <script src="data.js"></script>
-    <script src="sales.js"></script>
-    <script src="main.js"></script>
-    <script src="promo-banner.js"></script>
-    <script src="product_top.js"></script>
-    <script src="decor.js"></script>
-    <script src="decor_page.js"></script>
-    <script src="nt_product.js"></script>
+   <script>
+  fetch("header.html")
+    .then(res => res.text())
+    .then(data => {
+      document.getElementById("header-placeholder").innerHTML = data;
+      // Chạy lại JS sau khi header được gắn
+      const script = document.createElement("script");
+      script.src = "main.js";
+      document.body.appendChild(script);
+    });
+</script>
+    <script>
+        fetch("footer.html")
+            .then((res) => res.text())
+            .then((data) => (document.getElementById("footer").innerHTML = data));
+    </script>
+
 </body>
 
 </html>

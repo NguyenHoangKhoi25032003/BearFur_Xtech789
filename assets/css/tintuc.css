@@ -71,6 +71,7 @@
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
   position: relative;
   z-index: 2;
+  height: 250px;
 }
 
 .news-title {

@@ -112,25 +112,22 @@ document.addEventListener("DOMContentLoaded", () => {
                 col.className = 'col-6 col-md-3'; // 2 cột trên mobile, 4 cột trên màn hình lớn
                 const discountPercentage = product.discount ? `-${product.discount}%` : '';
                 const originalPrice = product.originalPrice ? `${product.originalPrice.toLocaleString()}đ` : '';
-                const soldPercentage = (product.sold / 200) * 100;
+              
                 col.innerHTML = `
                     <div class="card_product h-100 position-relative">
                         ${discountPercentage ? `<div class="discount">${discountPercentage}</div>` : ''}
                         <img src="${product.image}" class="card-img-top" alt="${product.name}" data-hover="${product.hoverImage}" data-original="${product.image}">
                         <div class="product-icons">
                             <button class="icon-btn more-btn"><i class="bi bi-cart"></i></button>
-                            <button class="icon-btn zoom-btn"><i class="bi bi-search"></i></button>
+                           
+                          <button class="icon-btn zoom-btn" data-product='${JSON.stringify(product)}'><i class="bi bi-search"></i></button>
                         </div>
                         <div class="product-info">
                             <span class="new-label">Hàng mới</span>
                             <h5 class="product-name">${product.name}</h5>
                             <p class="product-description">${product.description}</p>
                             <p class="price">${product.price.toLocaleString()}đ <span class="original-price">${originalPrice}</span></p>
-                            <div class="sold-bar">
-                                <div class="sold-progress" style="width: ${soldPercentage}%;">
-                                    <span class="sold-text">Đã bán ${product.sold}</span>
-                                </div>
-                            </div>
+                            
                            
                         </div>
                     </div>

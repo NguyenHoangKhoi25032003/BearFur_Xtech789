@@ -1,0 +1,82 @@
+.about-hero {
+  background-image: url('/assets/img/bg-gioi-thieu.jpg'); /* ✅ Đường dẫn ảnh nền */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 250px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+  color: white;
+}
+
+/* Nếu bạn muốn làm ảnh tối nhẹ để chữ dễ đọc hơn */
+.about-hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4); /* lớp phủ đen mờ */
+  z-index: 1;
+}
+
+.about-hero-content {
+  position: relative;
+  z-index: 2;
+}
+
+.about-hero h1 {
+  font-size: 36px;
+  font-weight: bold;
+  color: #f58c40; /* Màu cam nổi bật */
+  margin-bottom: 10px;
+}
+
+.about-hero p {
+  font-size: 16px;
+  color: #fff;
+  margin: 0;
+}
+
+.about-hero a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.about-hero span {
+  color: #fdd9c0;
+}
+.about-content
+{
+    width: 90vw;
+    margin: auto;
+
+}
+.container
+{
+    margin-bottom: 20px;
+}
+.about-content {
+  background: #fff;
+  padding: 60px 20px;
+}
+
+.about-content .container {
+  max-width: 1000px;
+  margin: 0 auto;
+  font-family: "Segoe UI", "Roboto", "Inter", sans-serif;
+  font-size: 17px;
+  color: #333;
+  line-height: 1.8;
+}
+
+.about-content p {
+  margin-bottom: 20px;
+}
+
+.about-content strong {
+  color: #222;
+  font-weight: 600;
+}

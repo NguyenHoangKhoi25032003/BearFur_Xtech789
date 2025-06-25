@@ -33,7 +33,7 @@
             hoverImage: "assets/img/pro_4.webp"
         },
         {
-            name: "Bàn chay 1 tầng chất liệu MDF",
+            name: "Bàn chay 1 tầng chất liệu MDF MDF MDF",
             description: "Kệ treo tường 1 tầng chất liệu MDF",
             price: 153000,
             originalPrice: 230000,
@@ -74,7 +74,7 @@
             hoverImage: "assets/img/pro_4.webp"
         },
         {
-            name: "Bàn chay 1 tầng chất liệu MDF",
+            name: "Bàn chay 1 tầng chất liệu MDF MDF MDF",
             description: "Kệ treo tường 1 tầng chất liệu MDF",
             price: 153000,
             originalPrice: 230000,

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.2/p5.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="assets/css/contac/contac.css">
+</head>
+
+<body>
+    <div id="header"></div>
+<section class="about-hero">
+  <div class="about-hero-content">
+    <h1>Liên hệ</h1>
+    <p><a href="/">Trang chủ</a> &nbsp;›&nbsp; <span>Liên hệ</span></p>
+  </div>
+</section>
+
+<section class="contact-section">
+  <!-- Cột trái -->
+  <div class="contact-left">
+    <h3>Nơi giải đáp toàn bộ mọi thắc mắc của bạn?</h3>
+    <p class="desc">Với sứ mệnh "Khách hàng là ưu tiên số 1" chúng tôi luôn mang lại giá trị tốt nhất</p>
+
+    <div class="info-group">
+      <div class="info-item">
+        <i class="fas fa-map-marker-alt"></i>
+        <div>
+          <b>Địa chỉ</b>
+          70 Lữ Gia, Phường 15, Quận 11, TP.HCM
+        </div>
+      </div>
+      <div class="info-item">
+        <i class="fas fa-clock"></i>
+        <div>
+          <b>Thời gian làm việc</b>
+          8h - 22h từ thứ 2 đến chủ nhật
+        </div>
+      </div>
+      <div class="info-item">
+        <i class="fas fa-phone"></i>
+        <div>
+          <b>Hotline</b>
+          1900 6750
+        </div>
+      </div>
+      <div class="info-item">
+        <i class="fas fa-envelope"></i>
+        <div>
+          <b>Email</b>
+          support@sapo.vn
+        </div>
+      </div>
+    </div>
+
+    <h3>Liên hệ với chúng tôi</h3>
+    <p class="desc">Nếu bạn có thắc mắc gì, có thể gửi yêu cầu cho chúng tôi, và chúng tôi sẽ liên lạc lại với bạn sớm nhất có thể.</p>
+
+    <form>
+      <input type="text" placeholder="Họ và tên" required />
+      <input type="email" placeholder="Email" required />
+      <input type="tel" placeholder="Điện thoại*" required />
+      <textarea rows="4" placeholder="Nội dung"></textarea>
+      <button type="submit">Gửi thông tin</button>
+    </form>
+  </div>
+
+  <!-- Cột phải (bản đồ) -->
+  <div class="contact-right">
+    <iframe
+      src="https://www.google.com/maps?q=266+Đội+Cấn,+Ba+Đình,+Hà+Nội&output=embed"
+      allowfullscreen
+      loading="lazy">
+    </iframe>
+  </div>
+</section>
+<div id="footer"></div>
+  <script>
+        fetch("footer.html")
+            .then((res) => res.text())
+            .then((data) => (document.getElementById("footer").innerHTML = data));
+    </script>
+
+    <script>
+        fetch("header.html")
+            .then((res) => res.text())
+            .then((data) => (document.getElementById("header").innerHTML = data));
+    </script>
+</body>
+
+</html>

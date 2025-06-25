@@ -38,10 +38,10 @@ document.querySelector('.modal-product-toggle').addEventListener('click', (e) =>
     if (!isActive) {
         // Show sub-menu
         subMenu.innerHTML = `
-            <li><a href="#">Đèn trang trí</a></li
-            <li><a href="#">Đồ trang trí</a></li>
-            <li><a href="#">Đồ nội thất</a></li>
-            <li><a href="#">Thiết bị vệ sinh</a></li>
+            <li><a href="product.html?category=Đèn trang trí">Đèn trang trí</a></li
+            <li><a  href="product.html?category=Đồ trang trí">Đồ trang trí</a></li>
+            <li><a  href="product.html?category=Đồ trang trí">Đồ nội thất</a></li>
+            <li><a  href="product.html?category=Đồ trang trí">Thiết bị vệ sinh</a></li>
         `;
         dropdown.classList.add('active');
         toggleIcon.textContent = '-';
