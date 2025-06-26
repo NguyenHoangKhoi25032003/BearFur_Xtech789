@@ -36,7 +36,7 @@
   padding: 40px 30px;
   max-width: 500px;
   width: 100%;
-  text-align: left;
+  text-align: center;
   transition: opacity 0.5s, transform 0.5s;
   flex: 1;
   justify-content: flex-start;
@@ -103,7 +103,7 @@
   margin: auto;
 }
 .promo-content {
-  margin-right: 800px;
+  margin-right: 600px;
 }
 /* Mobile responsive */
 @media (max-width: 768px) {
@@ -115,7 +115,7 @@
   .promo-content {
     padding: 30px 20px;
     text-align: center;
-    align-items: flex-start;
+    align-items: center;
     margin-right: 0;
   }
 
