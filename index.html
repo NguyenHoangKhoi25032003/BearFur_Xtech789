@@ -1,449 +1,583 @@
 <!DOCTYPE html>
 <html>
-
-<head>
+  <head>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.2/p5.min.js"></script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+    />
 
     <!-- Thêm Bootstrap Icons -->
-    <link rel="stylesheet" href="assets/css/main.css">
-    <link rel="stylesheet" href="assets/css/promo-banner.css">
-    <link rel="stylesheet" href="assets/css/product-section.css">
-    <link rel="stylesheet" href="assets/css/sales.css">
-    <link rel="stylesheet" href="assets/css/product_sales.css">
-    <link rel="stylesheet" href="assets/css/product_top.css">
-    <link rel="stylesheet" href="assets/css/decor.css">
-    <link rel="stylesheet" href="assets/css/decor-page.css">
-    <link rel="stylesheet" href="assets/css/footer.css">
-    <link rel="stylesheet" href="assets/css/intargamr.css">
-    <link rel="stylesheet" href="assets/css/danhgia.css">
-    <link rel="stylesheet" href="assets/css/tintuc.css">
-    <link rel="stylesheet" href="assets/css/modal.css">
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="stylesheet" href="assets/css/promo-banner.css" />
+    <link rel="stylesheet" href="assets/css/product-section.css" />
+    <link rel="stylesheet" href="assets/css/sales.css" />
+    <link rel="stylesheet" href="assets/css/product_sales.css" />
+    <link rel="stylesheet" href="assets/css/product_top.css" />
+    <link rel="stylesheet" href="assets/css/decor.css" />
+    <link rel="stylesheet" href="assets/css/decor-page.css" />
+    <link rel="stylesheet" href="assets/css/footer.css" />
+    <link rel="stylesheet" href="assets/css/intargamr.css" />
+    <link rel="stylesheet" href="assets/css/danhgia.css" />
+    <link rel="stylesheet" href="assets/css/tintuc.css" />
+    <link rel="stylesheet" href="assets/css/modal.css" />
+  </head>
 
-</head>
-
-<body>
+  <body>
     <!-- <div id="header">
 
     </div> -->
-<div id="header-placeholder"></div>
+    <div id="header-placeholder"></div>
     <section class="promo-banner position-relative">
-        <div class="promo-background"></div>
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-md-6">
-                    <div class="promo-content text-center text-md-start p-4 bg-light rounded shadow-sm">
-                        <h2 class="text-warning">#FURNITURES</h2>
-                        <h1 class="display-4 fw-bold text-dark">XU HƯỚNG NỘI THẤT</h1>
-                        <p class="text-muted">Đồ nội thất cao cấp được nâng niu trong từng chi tiết <br> hàng đầu Việt
-                            Nam</p>
-                        <a href="#" class="btn btn-warning rounded-pill px-4 py-2 text-white">MUA NGAY</a>
-                    </div>
-                </div>
-                <div class="col-md-6 d-flex justify-content-center">
-                    <div class="promo-image"></div>
-                </div>
+      <div class="promo-background"></div>
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-md-6">
+            <div
+              class="promo-content text-center text-md-start p-4 bg-light rounded shadow-sm"
+            >
+              <h2 class="text-warning">#FURNITURES</h2>
+              <h1 class="display-4 fw-bold text-dark">XU HƯỚNG NỘI THẤT</h1>
+              <p class="text-muted">
+                Đồ nội thất cao cấp được nâng niu trong từng chi tiết <br />
+                hàng đầu Việt Nam
+              </p>
+              <a
+                href="#"
+                class="btn btn-warning rounded-pill px-4 py-2 text-white"
+                >MUA NGAY</a
+              >
             </div>
+          </div>
+          <div class="col-md-6 d-flex justify-content-center">
+            <div class="promo-image"></div>
+          </div>
         </div>
+      </div>
     </section>
 
     <!-- Sản phẩm nổi bật -->
-    <section class="grid-container grid-row-1 ">
-        <div class="card card1" style="background-image: url('assets/img/cate_1_img.webp');">
-            <h2>Sản phẩm bán chạy</h2>
-            <p>Tiện ích cho nhu cầu sinh hoạt hằng ngày. Giải pháp <br>An toàn - Tiết kiệm</p>
-            <a href="#">Xem thêm</a>
+    <section class="grid-container grid-row-1">
+      <div
+        class="card card1"
+        style="background-image: url('assets/img/cate_1_img.webp')"
+      >
+        <h2>Sản phẩm bán chạy</h2>
+        <p>
+          Tiện ích cho nhu cầu sinh hoạt hằng ngày. Giải pháp <br />An toàn -
+          Tiết kiệm
+        </p>
+        <a href="#">Xem thêm</a>
+      </div>
 
-        </div>
+      <div
+        class="card card2"
+        style="background-image: url('assets/img/cate_2_img.webp')"
+      >
+        <h2>Đèn trang trí</h2>
+        <p>Thẩm mỹ độc đáo</p>
+      </div>
 
-        <div class="card card2" style="background-image: url('assets/img/cate_2_img.webp');">
-            <h2>Đèn trang trí</h2>
-            <p>Thẩm mỹ độc đáo</p>
+      <div
+        class="card card3"
+        style="background-image: url('assets/img/cate_3_img.webp')"
+      >
+        <h2>Đồ trang trí</h2>
+        <p>Không gian nghệ thuật</p>
+      </div>
 
-
-        </div>
-
-        <div class="card card3" style="background-image: url('assets/img/cate_3_img.webp');">
-            <h2>Đồ trang trí</h2>
-            <p>Không gian nghệ thuật</p>
-
-
-        </div>
-
-        <div class="card card4" style="background-image: url('assets/img/cate_4_img.webp');">
-            <h2>Thiết bị vệ sinh</h2>
-            <p>Đa dạng mẫu mã</p>
-
-
-        </div>
+      <div
+        class="card card4"
+        style="background-image: url('assets/img/cate_4_img.webp')"
+      >
+        <h2>Thiết bị vệ sinh</h2>
+        <p>Đa dạng mẫu mã</p>
+      </div>
     </section>
 
     <section class="grid-container grid-row-2">
-        <div class="card card5" style="background-image: url('assets/img/cate_6_img.webp');">
-            <h2>Top sản phẩm hàng đầu</h2>
-            <p>Thiết kế đơn giản - Tinh tế - Hiện đại</p>
-            <a href="#">Xem thêm</a>
+      <div
+        class="card card5"
+        style="background-image: url('assets/img/cate_6_img.webp')"
+      >
+        <h2>Top sản phẩm hàng đầu</h2>
+        <p>Thiết kế đơn giản - Tinh tế - Hiện đại</p>
+        <a href="#">Xem thêm</a>
+      </div>
 
-        </div>
+      <div
+        class="card card6"
+        style="background-image: url('assets/img/cate_5_img.webp')"
+      >
+        <h2>Đồ nội thất</h2>
+        <p>Trang trí không gian</p>
+      </div>
 
-        <div class="card card6" style="background-image: url('assets/img/cate_5_img.webp');">
-            <h2>Đồ nội thất</h2>
-            <p>Trang trí không gian</p>
-
-
-        </div>
-
-        <div class="card card7" style="background-image: url('assets/img/cate_7_img.webp');">
-            <h2>Sản phẩm thủ công</h2>
-            <p>Đường nét chạm khắc tinh tế</p>
-            <a href="#">Xem thêm</a>
-
-        </div>
+      <div
+        class="card card7"
+        style="background-image: url('assets/img/cate_7_img.webp')"
+      >
+        <h2>Sản phẩm thủ công</h2>
+        <p>Đường nét chạm khắc tinh tế</p>
+        <a href="#">Xem thêm</a>
+      </div>
     </section>
 
     <div class="container my-5">
-        <div class="timer-container">
-            <span>Khuyến mãi đặc biệt <i class="text-success" id="timer">3 ngày 00:00:00</i></span>
+      <div class="timer-container">
+        <span
+          >Khuyến mãi đặc biệt
+          <i class="text-success" id="timer">3 ngày 00:00:00</i></span
+        >
+      </div>
 
-
-        </div>
-
-        <div class="row" id="productContainer"></div>
+      <div class="row" id="productContainer"></div>
     </div>
 
     <div class="container_top py-4">
+      <!-- Tabs -->
+      <div class="tabs-wrapper mb-4">
+        <div class="tab-item active">Top bán chạy</div>
+        <div class="tab-item">Hàng mới về</div>
+      </div>
 
-        <!-- Tabs -->
-        <div class="tabs-wrapper mb-4">
-            <div class="tab-item active">Top bán chạy</div>
-            <div class="tab-item">Hàng mới về</div>
-        </div>
-
-        <!-- Product List -->
-        <div id="product-list" class="row g-3">
-            <!-- JS sẽ render sản phẩm tại đây -->
-        </div>
-        <div class="btn-wrapper text-center mt-4">
-            <button class="btn-xem-tat-ca">XEM TẤT CẢ</button>
-        </div>
+      <!-- Product List -->
+      <div id="product-list" class="row g-3">
+        <!-- JS sẽ render sản phẩm tại đây -->
+      </div>
+      <div class="btn-wrapper text-center mt-4">
+        <button class="btn-xem-tat-ca">XEM TẤT CẢ</button>
+      </div>
     </div>
 
     <!-- Section Đồ trang trí -->
     <div class="decor-section">
-        <!-- Hình ảnh bên trái -->
-        <div class="decor-image-wrapper">
-            <img src="assets/img/image_set_1.webp" alt="Phòng khách decor">
-            <!-- Các điểm tương tác -->
-            <div class="hotspot" data-product-index="2" style="top: 70%; left: 13%;"></div> <!-- Chậu cây -->
-            <div class="hotspot" data-product-index="1" style="top: 56%; left: 43%;"></div> <!-- Gối tựa -->
-            <div class="hotspot" data-product-index="0" style="top: 25%; left: 86%;"></div> <!-- Đèn cây -->
-        </div>
+      <!-- Hình ảnh bên trái -->
+      <div class="decor-image-wrapper">
+        <img src="assets/img/image_set_1.webp" alt="Phòng khách decor" />
+        <!-- Các điểm tương tác -->
+        <div
+          class="hotspot"
+          data-product-index="2"
+          style="top: 70%; left: 13%"
+        ></div>
+        <!-- Chậu cây -->
+        <div
+          class="hotspot"
+          data-product-index="1"
+          style="top: 56%; left: 43%"
+        ></div>
+        <!-- Gối tựa -->
+        <div
+          class="hotspot"
+          data-product-index="0"
+          style="top: 25%; left: 86%"
+        ></div>
+        <!-- Đèn cây -->
+      </div>
 
-        <!-- Phần thông tin sản phẩm -->
-        <div class="decor-info">
-            <h2>Đồ trang trí</h2>
-            <p>Khám phá những ý tưởng mới để biến đổi căn phòng của bạn</p>
-            <div class="decor-carousel-wrapper">
-                <div class="decor-carousel" id="decor-product-wrapper"></div>
-            </div>
-            <!-- Popup sản phẩm -->
-            <div id="decor-product-popup" class="product-popup"
-                style="display: none; position: absolute; z-index: 1000;">
-                <img id="decor-popup-image" src="" alt="Product Image">
-                <div class="popup-product-details">
-                    <h4 id="decor-popup-name"></h4>
-                    <p id="decor-popup-price"></p>
-                </div>
-            </div>
-            <!-- Dấu chấm chỉ trang -->
-            <div id="decor-pagination-dots" class="dots"
-                style="display: flex; justify-content: center; gap: 6px; margin-top: 20px;"></div>
+      <!-- Phần thông tin sản phẩm -->
+      <div class="decor-info">
+        <h2>Đồ trang trí</h2>
+        <p>Khám phá những ý tưởng mới để biến đổi căn phòng của bạn</p>
+        <div class="decor-carousel-wrapper">
+          <div class="decor-carousel" id="decor-product-wrapper"></div>
         </div>
+        <!-- Popup sản phẩm -->
+        <div
+          id="decor-product-popup"
+          class="product-popup"
+          style="display: none; position: absolute; z-index: 1000"
+        >
+          <img id="decor-popup-image" src="" alt="Product Image" />
+          <div class="popup-product-details">
+            <h4 id="decor-popup-name"></h4>
+            <p id="decor-popup-price"></p>
+          </div>
+        </div>
+        <!-- Dấu chấm chỉ trang -->
+        <div
+          id="decor-pagination-dots"
+          class="dots"
+          style="
+            display: flex;
+            justify-content: center;
+            gap: 6px;
+            margin-top: 20px;
+          "
+        ></div>
+      </div>
     </div>
 
     <!-- Section Đèn trang trí -->
     <div class="decor-page">
-        <div class="decor-title-wrapper">
-            <span>Đèn trang trí</span>
-            <div class="decor-nav-buttons">
-                <button class="decor-nav-btn prev-btn"><i class="bi bi-arrow-bar-left"></i></button>
-                <button class="decor-nav-btn next-btn"><i class="bi bi-arrow-bar-right"></i></button>
-            </div>
+      <div class="decor-title-wrapper">
+        <span>Đèn trang trí</span>
+        <div class="decor-nav-buttons">
+          <button class="decor-nav-btn prev-btn">
+            <i class="bi bi-arrow-bar-left"></i>
+          </button>
+          <button class="decor-nav-btn next-btn">
+            <i class="bi bi-arrow-bar-right"></i>
+          </button>
         </div>
-        <div id="product-list-decor" class="row g-3">
-            <!-- JS sẽ render sản phẩm tại đây -->
-        </div>
-        <div class="btn-wrapper text-center mt-4">
-            <button class="btn-xem-tat-ca">XEM TẤT CẢ</button>
-        </div>
+      </div>
+      <div id="product-list-decor" class="row g-3">
+        <!-- JS sẽ render sản phẩm tại đây -->
+      </div>
+      <div class="btn-wrapper text-center mt-4">
+        <button class="btn-xem-tat-ca">XEM TẤT CẢ</button>
+      </div>
     </div>
 
     <!-- Section Đồ nội thất -->
     <div class="decor-section">
-        <!-- Phần thông tin sản phẩm -->
-        <div class="decor-info">
-            <h2>Đồ nội thất</h2>
-            <p>Những thiết kế làm cho căn phòng của bạn trở nên hiện đại và tinh tế</p>
-            <div class="decor-carousel-wrapper">
-                <div class="decor-carousel" id="nt-product-wrapper"></div>
-            </div>
-            <!-- Popup sản phẩm -->
-            <div id="nt-product-popup" class="product-popup" style="display: none; position: absolute; z-index: 1000;">
-                <img id="nt-popup-image" src="" alt="Product Image">
-                <div class="popup-product-details">
-                    <h4 id="nt-popup-name"></h4>
-                    <p id="nt-popup-price"></p>
-                </div>
-            </div>
-            <!-- Dấu chấm chỉ trang -->
-            <div id="nt-pagination-dots" class="dots"
-                style="display: flex; justify-content: center; gap: 6px; margin-top: 20px;"></div>
+      <!-- Phần thông tin sản phẩm -->
+      <div class="decor-info">
+        <h2>Đồ nội thất</h2>
+        <p>
+          Những thiết kế làm cho căn phòng của bạn trở nên hiện đại và tinh tế
+        </p>
+        <div class="decor-carousel-wrapper">
+          <div class="decor-carousel" id="nt-product-wrapper"></div>
         </div>
-        <!-- Hình ảnh bên phải -->
-        <div class="decor-image-wrapper">
-            <img src="assets/img/image_set_2.webp" alt="Phòng khách decor">
-            <!-- Các điểm tương tác -->
-            <div class="hotspot" data-product-index="2" style="top: 70%; left: 13%;"></div> <!-- Chậu cây -->
-            <div class="hotspot" data-product-index="1" style="top: 17%; left: 27%;"></div> <!-- Gối tựa -->
-            <div class="hotspot" data-product-index="0" style="top: 50%; left: 80%;"></div> <!-- Đèn cây -->
+        <!-- Popup sản phẩm -->
+        <div
+          id="nt-product-popup"
+          class="product-popup"
+          style="display: none; position: absolute; z-index: 1000"
+        >
+          <img id="nt-popup-image" src="" alt="Product Image" />
+          <div class="popup-product-details">
+            <h4 id="nt-popup-name"></h4>
+            <p id="nt-popup-price"></p>
+          </div>
         </div>
-
+        <!-- Dấu chấm chỉ trang -->
+        <div
+          id="nt-pagination-dots"
+          class="dots"
+          style="
+            display: flex;
+            justify-content: center;
+            gap: 6px;
+            margin-top: 20px;
+          "
+        ></div>
+      </div>
+      <!-- Hình ảnh bên phải -->
+      <div class="decor-image-wrapper">
+        <img src="assets/img/image_set_2.webp" alt="Phòng khách decor" />
+        <!-- Các điểm tương tác -->
+        <div
+          class="hotspot"
+          data-product-index="2"
+          style="top: 70%; left: 13%"
+        ></div>
+        <!-- Chậu cây -->
+        <div
+          class="hotspot"
+          data-product-index="1"
+          style="top: 17%; left: 27%"
+        ></div>
+        <!-- Gối tựa -->
+        <div
+          class="hotspot"
+          data-product-index="0"
+          style="top: 50%; left: 80%"
+        ></div>
+        <!-- Đèn cây -->
+      </div>
     </div>
 
-
-
     <div class="decor-page">
-        <div class="decor-title-wrapper">
-            <span>Thiết bị vệ sinh</span>
-            <div class="decor-nav-buttons">
-                <button class="decor-nav-btn prev-btn"><i class="bi bi-arrow-bar-left"></i></button>
-                <button class="decor-nav-btn next-btn"><i class="bi bi-arrow-bar-right"></i></button>
-            </div>
+      <div class="decor-title-wrapper">
+        <span>Thiết bị vệ sinh</span>
+        <div class="decor-nav-buttons">
+          <button class="decor-nav-btn prev-btn">
+            <i class="bi bi-arrow-bar-left"></i>
+          </button>
+          <button class="decor-nav-btn next-btn">
+            <i class="bi bi-arrow-bar-right"></i>
+          </button>
         </div>
-        <div id="safe-product-list-decor" class="row g-3">
-            <!-- JS sẽ render sản phẩm tại đây -->
-        </div>
-        <div class="btn-wrapper text-center mt-4">
-            <button class="btn-xem-tat-ca">XEM TẤT CẢ</button>
-        </div>
+      </div>
+      <div id="safe-product-list-decor" class="row g-3">
+        <!-- JS sẽ render sản phẩm tại đây -->
+      </div>
+      <div class="btn-wrapper text-center mt-4">
+        <button class="btn-xem-tat-ca">XEM TẤT CẢ</button>
+      </div>
     </div>
 
     <section class="review-section">
-        <div class="review-wrapper">
-            <!-- Cột trái -->
-            <div class="review-left">
-                <div class="review-title">
-                    <h2>Đánh giá khách hàng</h2>
-                    <p>Những lời đánh giá chân thật từ những khách hàng đã đặt niềm tin ở <span>Bean Furniture</span>
-                    </p>
-                </div>
-                <div class="review-card">
-                    <img src="assets/img/image_danh_gia_1.webp" alt="Đặng Chinh Đức">
-                    <div class="review-info">
-                        <div>
-                            <h4>Đặng Chinh Đức</h4>
-                            <small>Developer</small>
-                            <p>Sản phẩm được thiết kế chi tiết, nhiều mẫu mã và đặc biệt nhân viên tư vấn nhiệt tình.
-                                Tôi rất hài lòng với trải nghiệm tại đây!</p>
-                        </div>
-                        <div class="quote">❝</div>
-                    </div>
-                </div>
+      <div class="review-wrapper">
+        <!-- Cột trái -->
+        <div class="review-left">
+          <div class="review-title">
+            <h2>Đánh giá khách hàng</h2>
+            <p>
+              Những lời đánh giá chân thật từ những khách hàng đã đặt niềm tin ở
+              <span>Bean Furniture</span>
+            </p>
+          </div>
+          <div class="review-card">
+            <img src="assets/img/image_danh_gia_1.webp" alt="Đặng Chinh Đức" />
+            <div class="review-info">
+              <div>
+                <h4>Đặng Chinh Đức</h4>
+                <small>Developer</small>
+                <p>
+                  Sản phẩm được thiết kế chi tiết, nhiều mẫu mã và đặc biệt nhân
+                  viên tư vấn nhiệt tình. Tôi rất hài lòng với trải nghiệm tại
+                  đây!
+                </p>
+              </div>
+              <div class="quote">❝</div>
             </div>
-
-            <!-- Cột phải -->
-            <div class="review-right">
-                <div class="review-card">
-                    <img src="assets/img/image_danh_gia_1.webp" alt="Nguyễn Ngọc Sơn">
-                    <div class="review-info">
-                        <div>
-                            <h4>Nguyễn Ngọc Sơn</h4>
-                            <small>Đầu bếp</small>
-                            <p>Sản phẩm được thiết kế chi tiết, nhiều mẫu mã và đặc biệt nhân viên tư vấn nhiệt tình.
-                                Tôi rất hài lòng với trải nghiệm tại đây!</p>
-                        </div>
-                        <div class="quote">❝</div>
-                    </div>
-                </div>
-                <div class="review-card">
-                    <img src="assets/img/image_danh_gia_1.webp" alt="Lê Quang Hải">
-                    <div class="review-info">
-                        <div>
-                            <h4>Lê Quang Hải</h4>
-                            <small>Giáo viên</small>
-                            <p>Sản phẩm được thiết kế chi tiết, nhiều mẫu mã và đặc biệt nhân viên tư vấn nhiệt tình.
-                                Tôi rất hài lòng với trải nghiệm tại đây!</p>
-                        </div>
-                        <div class="quote">❝</div>
-                    </div>
-                </div>
-            </div>
+          </div>
         </div>
+
+        <!-- Cột phải -->
+        <div class="review-right">
+          <div class="review-card">
+            <img src="assets/img/image_danh_gia_1.webp" alt="Nguyễn Ngọc Sơn" />
+            <div class="review-info">
+              <div>
+                <h4>Nguyễn Ngọc Sơn</h4>
+                <small>Đầu bếp</small>
+                <p>
+                  Sản phẩm được thiết kế chi tiết, nhiều mẫu mã và đặc biệt nhân
+                  viên tư vấn nhiệt tình. Tôi rất hài lòng với trải nghiệm tại
+                  đây!
+                </p>
+              </div>
+              <div class="quote">❝</div>
+            </div>
+          </div>
+          <div class="review-card">
+            <img src="assets/img/image_danh_gia_1.webp" alt="Lê Quang Hải" />
+            <div class="review-info">
+              <div>
+                <h4>Lê Quang Hải</h4>
+                <small>Giáo viên</small>
+                <p>
+                  Sản phẩm được thiết kế chi tiết, nhiều mẫu mã và đặc biệt nhân
+                  viên tư vấn nhiệt tình. Tôi rất hài lòng với trải nghiệm tại
+                  đây!
+                </p>
+              </div>
+              <div class="quote">❝</div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
-
     <section class="news-section">
-        <h2>Tin tức mới nhất</h2>
-        <p class="subtitle">Cập nhật những tin tức nội thất mới nhất hiện nay</p>
+      <h2>Tin tức mới nhất</h2>
+      <p class="subtitle">Cập nhật những tin tức nội thất mới nhất hiện nay</p>
 
-        <div class="news-list">
-            <!-- Card 1 -->
-            <div class="news-card">
-                <div class="news-image-wrapper">
-                    <img src="assets/img/ghe-sofa-gia-re-duoi-2-trieu-14.webp" alt="Sofa">
-                </div>
-                <div class="news-content">
-                    <div class="news-title">5 Mẫu Ghế Sofa Giá Rẻ Dưới 2 Triệu Nhỏ Gọn Bán Chạy Nhất 2023</div>
-                    <div class="news-date">27/08/2023</div>
-                    <div class="news-description">
-                        Mẫu ghế sofa giá rẻ dưới 2 triệu hiện đang được nhiều người “săn lùng” nhờ giá thành rẻ, chất
-                        lượng tốt...
-                    </div>
-                </div>
+      <div class="news-list">
+        <!-- Card 1 -->
+        <div class="news-card">
+          <div class="news-image-wrapper">
+            <img
+              src="assets/img/ghe-sofa-gia-re-duoi-2-trieu-14.webp"
+              alt="Sofa"
+            />
+          </div>
+          <div class="news-content">
+            <div class="news-title">
+              5 Mẫu Ghế Sofa Giá Rẻ Dưới 2 Triệu Nhỏ Gọn Bán Chạy Nhất 2023
             </div>
-
-            <!-- Card 2 -->
-            <div class="news-card">
-                <div class="news-image-wrapper">
-                    <img src="assets/img/ghe-sofa-gia-re-duoi-2-trieu-14.webp" alt="Sofa">
-                </div>
-                <div class="news-content">
-                    <div class="news-title">Cách Lắp Ghế Xoay Văn Phòng Nhanh Chóng Chỉ Trong 4 Bước</div>
-                    <div class="news-date">26/08/2023</div>
-                    <div class="news-description">
-                        Bạn đang loay hoay tìm cách lắp ghế xoay văn phòng? Chúc mừng bạn, bạn đã tìm đúng nơi rồi
-                        đấy...
-                    </div>
-                </div>
+            <div class="news-date">27/08/2023</div>
+            <div class="news-description">
+              Mẫu ghế sofa giá rẻ dưới 2 triệu hiện đang được nhiều người “săn
+              lùng” nhờ giá thành rẻ, chất lượng tốt...
             </div>
-
-            <!-- Card 3 -->
-            <div class="news-card">
-                <div class="news-image-wrapper">
-                    <img src="assets/img/ghe-sofa-gia-re-duoi-2-trieu-14.webp" alt="Sofa">
-                </div>
-                <div class="news-content">
-                    <div class="news-title">Hướng Dẫn Chọn Kích Thước Ghế Giám Đốc Phù Hợp Cho Lãnh Đạo</div>
-                    <div class="news-date">25/08/2023</div>
-                    <div class="news-description">
-                        Ghế giám đốc là lựa chọn số một mang lại uy thế cho các nhà lãnh đạo. Hãy lựa chọn đúng kiểu
-                        dáng...
-                    </div>
-                </div>
-            </div>
-            <div class="news-card">
-                <div class="news-image-wrapper">
-                    <img src="assets/img/ghe-sofa-gia-re-duoi-2-trieu-14.webp" alt="Sofa">
-                </div>
-                <div class="news-content">
-                    <div class="news-title">Hướng Dẫn Chọn Kích Thước Ghế Giám Đốc Phù Hợp Cho Lãnh Đạo</div>
-                    <div class="news-date">25/08/2023</div>
-                    <div class="news-description">
-                        Ghế giám đốc là lựa chọn số một mang lại uy thế cho các nhà lãnh đạo. Hãy lựa chọn đúng kiểu
-                        dáng...
-                    </div>
-                </div>
-            </div>
-            <div class="news-card">
-                <div class="news-image-wrapper">
-                    <img src="assets/img/ghe-sofa-gia-re-duoi-2-trieu-14.webp" alt="Sofa">
-                </div>
-                <div class="news-content">
-                    <div class="news-title">Hướng Dẫn Chọn Kích Thước Ghế Giám Đốc Phù Hợp Cho Lãnh Đạo</div>
-                    <div class="news-date">25/08/2023</div>
-                    <div class="news-description">
-                        Ghế giám đốc là lựa chọn số một mang lại uy thế cho các nhà lãnh đạo. Hãy lựa chọn đúng kiểu
-                        dáng...
-                    </div>
-                </div>
-            </div>
-            <div class="news-card">
-                <div class="news-image-wrapper">
-                    <img src="assets/img/ghe-sofa-gia-re-duoi-2-trieu-14.webp" alt="Sofa">
-                </div>
-                <div class="news-content">
-                    <div class="news-title">Hướng Dẫn Chọn Kích Thước Ghế Giám Đốc Phù Hợp Cho Lãnh Đạo</div>
-                    <div class="news-date">25/08/2023</div>
-                    <div class="news-description">
-                        Ghế giám đốc là lựa chọn số một mang lại uy thế cho các nhà lãnh đạo. Hãy lựa chọn đúng kiểu
-                        dáng...
-                    </div>
-                </div>
-            </div>
+          </div>
         </div>
 
+        <!-- Card 2 -->
+        <div class="news-card">
+          <div class="news-image-wrapper">
+            <img
+              src="assets/img/ghe-sofa-gia-re-duoi-2-trieu-14.webp"
+              alt="Sofa"
+            />
+          </div>
+          <div class="news-content">
+            <div class="news-title">
+              Cách Lắp Ghế Xoay Văn Phòng Nhanh Chóng Chỉ Trong 4 Bước
+            </div>
+            <div class="news-date">26/08/2023</div>
+            <div class="news-description">
+              Bạn đang loay hoay tìm cách lắp ghế xoay văn phòng? Chúc mừng bạn,
+              bạn đã tìm đúng nơi rồi đấy...
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="news-card">
+          <div class="news-image-wrapper">
+            <img
+              src="assets/img/ghe-sofa-gia-re-duoi-2-trieu-14.webp"
+              alt="Sofa"
+            />
+          </div>
+          <div class="news-content">
+            <div class="news-title">
+              Hướng Dẫn Chọn Kích Thước Ghế Giám Đốc Phù Hợp Cho Lãnh Đạo
+            </div>
+            <div class="news-date">25/08/2023</div>
+            <div class="news-description">
+              Ghế giám đốc là lựa chọn số một mang lại uy thế cho các nhà lãnh
+              đạo. Hãy lựa chọn đúng kiểu dáng...
+            </div>
+          </div>
+        </div>
+        <div class="news-card">
+          <div class="news-image-wrapper">
+            <img
+              src="assets/img/ghe-sofa-gia-re-duoi-2-trieu-14.webp"
+              alt="Sofa"
+            />
+          </div>
+          <div class="news-content">
+            <div class="news-title">
+              Hướng Dẫn Chọn Kích Thước Ghế Giám Đốc Phù Hợp Cho Lãnh Đạo
+            </div>
+            <div class="news-date">25/08/2023</div>
+            <div class="news-description">
+              Ghế giám đốc là lựa chọn số một mang lại uy thế cho các nhà lãnh
+              đạo. Hãy lựa chọn đúng kiểu dáng...
+            </div>
+          </div>
+        </div>
+        <div class="news-card">
+          <div class="news-image-wrapper">
+            <img
+              src="assets/img/ghe-sofa-gia-re-duoi-2-trieu-14.webp"
+              alt="Sofa"
+            />
+          </div>
+          <div class="news-content">
+            <div class="news-title">
+              Hướng Dẫn Chọn Kích Thước Ghế Giám Đốc Phù Hợp Cho Lãnh Đạo
+            </div>
+            <div class="news-date">25/08/2023</div>
+            <div class="news-description">
+              Ghế giám đốc là lựa chọn số một mang lại uy thế cho các nhà lãnh
+              đạo. Hãy lựa chọn đúng kiểu dáng...
+            </div>
+          </div>
+        </div>
+        <div class="news-card">
+          <div class="news-image-wrapper">
+            <img
+              src="assets/img/ghe-sofa-gia-re-duoi-2-trieu-14.webp"
+              alt="Sofa"
+            />
+          </div>
+          <div class="news-content">
+            <div class="news-title">
+              Hướng Dẫn Chọn Kích Thước Ghế Giám Đốc Phù Hợp Cho Lãnh Đạo
+            </div>
+            <div class="news-date">25/08/2023</div>
+            <div class="news-description">
+              Ghế giám đốc là lựa chọn số một mang lại uy thế cho các nhà lãnh
+              đạo. Hãy lựa chọn đúng kiểu dáng...
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
     <section class="insta-section">
-        <h2>Theo dõi instagram của chúng tôi</h2>
-        <span>@BeanFurniture</span>
-        <div class="insta-gallery">
-            <!-- Ảnh 1 -->
-            <div class="insta-item">
-                <img src="assets/img/cate_1_img.webp" alt="Ảnh 1">
-                <div class="insta-overlay">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram">
-                </div>
-            </div>
-            <!-- Ảnh 2 -->
-            <div class="insta-item">
-                <img src="assets/img/cate_2_img.webp" alt="Ảnh 2">
-                <div class="insta-overlay">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram">
-                </div>
-            </div>
-            <!-- Ảnh 3 -->
-            <div class="insta-item">
-                <img src="assets/img/cate_3_img.webp" alt="Ảnh 3">
-                <div class="insta-overlay">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram">
-                </div>
-            </div>
-            <!-- Ảnh 4 -->
-            <div class="insta-item">
-                <img src="assets/img/cate_4_img.webp" alt="Ảnh 4">
-                <div class="insta-overlay">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram">
-                </div>
-            </div>
-            <!-- Ảnh 5 -->
-            <div class="insta-item">
-                <img src="assets/img/cate_5_img.webp" alt="Ảnh 5">
-                <div class="insta-overlay">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram">
-                </div>
-            </div>
+      <h2>Theo dõi instagram của chúng tôi</h2>
+      <span>@BeanFurniture</span>
+      <div class="insta-gallery">
+        <!-- Ảnh 1 -->
+        <div class="insta-item">
+          <img src="assets/img/cate_1_img.webp" alt="Ảnh 1" />
+          <div class="insta-overlay">
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png"
+              alt="Instagram"
+            />
+          </div>
         </div>
+        <!-- Ảnh 2 -->
+        <div class="insta-item">
+          <img src="assets/img/cate_2_img.webp" alt="Ảnh 2" />
+          <div class="insta-overlay">
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png"
+              alt="Instagram"
+            />
+          </div>
+        </div>
+        <!-- Ảnh 3 -->
+        <div class="insta-item">
+          <img src="assets/img/cate_3_img.webp" alt="Ảnh 3" />
+          <div class="insta-overlay">
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png"
+              alt="Instagram"
+            />
+          </div>
+        </div>
+        <!-- Ảnh 4 -->
+        <div class="insta-item">
+          <img src="assets/img/cate_4_img.webp" alt="Ảnh 4" />
+          <div class="insta-overlay">
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png"
+              alt="Instagram"
+            />
+          </div>
+        </div>
+        <!-- Ảnh 5 -->
+        <div class="insta-item">
+          <img src="assets/img/cate_5_img.webp" alt="Ảnh 5" />
+          <div class="insta-overlay">
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png"
+              alt="Instagram"
+            />
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- Modal hiển thị chi tiết sản phẩm -->
     <div class="modal" id="product-modal">
-        <div class="modal-content">
-            <span class="close-btn">&times;</span>
-            <div class="modal-body">
-                <div class="modal-image">
-                    <img id="modal-image" src="" alt="Sản phẩm">
-                </div>
-                <div class="modal-info">
-                    <h2 id="modal-title"></h2>
-                    <p class="modal-price">
-                        <span id="modal-price"></span>
-                        <span id="modal-original-price" class="old-price"></span>
-                    </p>
-                    <p class="modal-description" id="modal-description"></p>
-                    <div class="modal-quantity">
-                        <label>Số lượng:</label>
-                        <button id="decrease-qty">-</button>
-                        <span id="modal-quantity">1</span>
-                        <button id="increase-qty">+</button>
-                    </div>
-                    <button class="add-to-cart-btn">Thêm vào giỏ hàng</button>
-                </div>
+      <div class="modal-content">
+        <span class="close-btn">&times;</span>
+        <div class="modal-body">
+          <div class="modal-image">
+            <img id="modal-image" src="" alt="Sản phẩm" />
+          </div>
+          <div class="modal-info">
+            <h2 id="modal-title"></h2>
+            <p class="modal-price">
+              <span id="modal-price"></span>
+              <span id="modal-original-price" class="old-price"></span>
+            </p>
+            <p class="modal-description" id="modal-description"></p>
+            <div class="modal-quantity">
+              <label>Số lượng:</label>
+              <button id="decrease-qty">-</button>
+              <span id="modal-quantity">1</span>
+              <button id="increase-qty">+</button>
             </div>
+            <button class="add-to-cart-btn">Thêm vào giỏ hàng</button>
+          </div>
         </div>
+      </div>
     </div>
-
-
 
     <!-- Footer -->
     <div id="footer"></div>
@@ -461,24 +595,21 @@
     <script src="assets/js/sales.js"></script>
     <script src="assets/js/product/modal.js"></script>
 
-
-   <script>
-  fetch("header.html")
-    .then(res => res.text())
-    .then(data => {
-      document.getElementById("header-placeholder").innerHTML = data;
-      // Chạy lại JS sau khi header được gắn
-      const script = document.createElement("script");
-      script.src = "main.js";
-      document.body.appendChild(script);
-    });
-</script>
     <script>
-        fetch("footer.html")
-            .then((res) => res.text())
-            .then((data) => (document.getElementById("footer").innerHTML = data));
+      fetch('header.html')
+        .then((res) => res.text())
+        .then((data) => {
+          document.getElementById('header-placeholder').innerHTML = data;
+          // Chạy lại JS sau khi header được gắn
+          const script = document.createElement('script');
+          script.src = 'main.js';
+          document.body.appendChild(script);
+        });
     </script>
-
-</body>
-
+    <script>
+      fetch('footer.html')
+        .then((res) => res.text())
+        .then((data) => (document.getElementById('footer').innerHTML = data));
+    </script>
+  </body>
 </html>

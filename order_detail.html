@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.2/p5.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="assets/css/order/order-detail.css" />
+  </head>
+
+  <body>
+    <div id="header"></div>
+    <div class="product-detail">
+      <div class="product-image">
+        <img
+          src="assets/img/ghe-sofa-gia-re-duoi-2-trieu-14.webp"
+          alt="Ghế ăn Sofia HomeLand"
+        />
+      </div>
+
+      <div class="product-info">
+        <h2>Ghế ăn Sofia HomeLand khung thép không gỉ</h2>
+        <p>
+          <strong>Tình trạng:</strong>
+          <span class="status in-stock">Còn hàng</span>
+        </p>
+        <p>
+          <strong>Mã sản phẩm:</strong>
+          <span class="status updating">Đang cập nhật</span>
+        </p>
+
+        <div class="price">
+          <span class="current-price">2.290.000₫</span>
+          <span class="old-price">2.670.000₫</span>
+        </div>
+
+        <p class="description">
+          Ghế ăn Sofia HomeLand khung thép không gỉ được thiết kế theo phong
+          cách tối giản nên phù hợp với mọi không gian nội thất. Sản phẩm có 2
+          màu cơ bản: đen và nâu, giúp người dùng có thêm nhiều lựa chọn cho
+          không gian nhà bếp.
+        </p>
+
+        <div class="quantity-section">
+          <label for="quantity">Số lượng:</label>
+          <div class="quantity-control">
+            <button class="qty-btn">-</button>
+            <input type="text" id="quantity" value="1" />
+            <button class="qty-btn">+</button>
+          </div>
+        </div>
+
+        <button class="add-to-cart">THÊM VÀO GIỎ HÀNG</button>
+      </div>
+    </div>
+
+    <div id="footer"></div>
+    <script>
+      fetch('footer.html')
+        .then((res) => res.text())
+        .then((data) => (document.getElementById('footer').innerHTML = data));
+    </script>
+
+    <script>
+      fetch('header.html')
+        .then((res) => res.text())
+        .then((data) => {
+          document.getElementById('header').innerHTML = data;
+          // Chạy lại JS sau khi header được gắn
+          const script = document.createElement('script');
+          script.src = 'main.js';
+          document.body.appendChild(script);
+        });
+    </script>
+  </body>
+</html>

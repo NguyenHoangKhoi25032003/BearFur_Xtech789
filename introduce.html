@@ -1,60 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Introduce</title>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.2/p5.min.js"></script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="assets/css/introduct/index.css">
-</head>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="assets/css/introduct/index.css" />
+  </head>
 
-<body>
+  <body>
     <div id="header"></div>
     <section class="about-hero">
-        <div class="about-hero-content">
-            <h1>Giới thiệu</h1>
-            <p><a href="/">Trang chủ</a> &nbsp;›&nbsp; <span>Giới thiệu</span></p>
-        </div>
+      <div class="about-hero-content">
+        <h1>Giới thiệu</h1>
+        <p><a href="/">Trang chủ</a> &nbsp;›&nbsp; <span>Giới thiệu</span></p>
+      </div>
     </section>
 
     <section class="about-content">
-        <div class="container">
-            <p>
-                Bean Furniture tự hào với đội ngũ thiết kế trẻ, luôn sáng tạo luôn cập nhật các xu hướng thiết kế mới.
-                Thế mạnh chủ lực là tư vấn thiết kế, thi công đồ gỗ. Với phương châm <strong>“Không Đâu Bằng
-                    Nhà”</strong>
-                Bean Furniture đã tự tin khẳng định chất lượng, dịch vụ và tính thẩm mỹ cao trong từng chi tiết thiết
-                kế, thi công.
-                Luôn mang lại sự hài lòng cho Khách Hàng!
-            </p>
+      <div class="container">
+        <p>
+          Bean Furniture tự hào với đội ngũ thiết kế trẻ, luôn sáng tạo luôn cập
+          nhật các xu hướng thiết kế mới. Thế mạnh chủ lực là tư vấn thiết kế,
+          thi công đồ gỗ. Với phương châm <strong>“Không Đâu Bằng Nhà”</strong>
+          Bean Furniture đã tự tin khẳng định chất lượng, dịch vụ và tính thẩm
+          mỹ cao trong từng chi tiết thiết kế, thi công. Luôn mang lại sự hài
+          lòng cho Khách Hàng!
+        </p>
 
-            <p>Đến với chúng tôi bạn sẽ được quyền lợi:</p>
+        <p>Đến với chúng tôi bạn sẽ được quyền lợi:</p>
 
-            <p><strong>Bảo hành chuyên nghiệp:</strong> Dịch vụ bảo hành chuyên nghiệp, tận tình và chu đáo cho khách
-                hàng</p>
+        <p>
+          <strong>Bảo hành chuyên nghiệp:</strong> Dịch vụ bảo hành chuyên
+          nghiệp, tận tình và chu đáo cho khách hàng
+        </p>
 
-            <p><strong>Giá tốt nhất tại Việt Nam:</strong> Tự tin là nhà cung cấp đồ trang trí với giá cả tốt nhất tại
-                Việt Nam</p>
+        <p>
+          <strong>Giá tốt nhất tại Việt Nam:</strong> Tự tin là nhà cung cấp đồ
+          trang trí với giá cả tốt nhất tại Việt Nam
+        </p>
 
-            <p><strong>Sản phẩm chính hãng:</strong> Chúng tôi cam kết 100% sản phẩm là uy tín, chất lượng cao</p>
-        </div>
-        <img src="assets/img/image_set_1.webp" alt="">
+        <p>
+          <strong>Sản phẩm chính hãng:</strong> Chúng tôi cam kết 100% sản phẩm
+          là uy tín, chất lượng cao
+        </p>
+      </div>
+      <img src="assets/img/image_set_1.webp" alt="" />
     </section>
-       <div id="footer"></div>
+    <div id="footer"></div>
     <script>
-        fetch("footer.html")
-            .then((res) => res.text())
-            .then((data) => (document.getElementById("footer").innerHTML = data));
+      fetch('footer.html')
+        .then((res) => res.text())
+        .then((data) => (document.getElementById('footer').innerHTML = data));
     </script>
 
-
     <script>
-        fetch("header.html")
-            .then((res) => res.text())
-            .then((data) => (document.getElementById("header").innerHTML = data));
+      fetch('header.html')
+        .then((res) => res.text())
+        .then((data) => {
+          document.getElementById('header').innerHTML = data;
+          // Chạy lại JS sau khi header được gắn
+          const script = document.createElement('script');
+          script.src = 'main.js';
+          document.body.appendChild(script);
+        });
     </script>
-</body>
-
+  </body>
 </html>

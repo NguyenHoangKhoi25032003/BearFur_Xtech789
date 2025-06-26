@@ -301,10 +301,16 @@
   </script>
 
   <script>
-    fetch("header.html")
-      .then((res) => res.text())
-      .then((data) => (document.getElementById("header").innerHTML = data));
-  </script>
+      fetch('header.html')
+        .then((res) => res.text())
+        .then((data) => {
+          document.getElementById('header').innerHTML = data;
+          // Chạy lại JS sau khi header được gắn
+          const script = document.createElement('script');
+          script.src = 'main.js';
+          document.body.appendChild(script);
+        });
+    </script>
 
   <script>
     function copyCode(code) {

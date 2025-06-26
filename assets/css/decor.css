@@ -107,23 +107,23 @@
 }
 
 .dots {
-    margin-top: 20px;
-    display: flex;
-    justify-content: center;
-    gap: 6px;
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 6px;
 }
 
 .dot {
-    width: 30px; /* Tăng kích thước để giống hình */
-    height: 10px; /* Chiều cao nhỏ hơn để tạo hình elip */
-    background: #d1d5db; /* Màu xám nhạt cho nút không active */
-    border-radius: 5px; /* Bo tròn để tạo hình elip */
-    cursor: pointer;
-    transition: background-color 0.3s ease;
+  width: 30px; /* Tăng kích thước để giống hình */
+  height: 10px; /* Chiều cao nhỏ hơn để tạo hình elip */
+  background: #d1d5db; /* Màu xám nhạt cho nút không active */
+  border-radius: 5px; /* Bo tròn để tạo hình elip */
+  cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
 .dot.active {
-    background: #f5a06d; /* Màu cam cho nút active */
+  background: #f5a06d; /* Màu cam cho nút active */
 }
 
 .nav-btn {
@@ -158,8 +158,8 @@
   position: relative;
 }
 .card_product_decor.active {
-    opacity: 1; /* Hiển thị sản phẩm active */
-    transform: translateX(0); /* Vị trí mặc định */
+  opacity: 1; /* Hiển thị sản phẩm active */
+  transform: translateX(0); /* Vị trí mặc định */
 }
 .card_product_decor:hover {
   transform: translateY(-5px);
@@ -174,11 +174,10 @@
 }
 .text-danger {
   margin-top: 20px !important;
-   text-align: left !important;
+  text-align: left !important;
   color: #dc3545 !important; /* Màu đỏ đậm */
   font-size: 20px !important;
-  font-style: italic !important
-  
+  font-style: italic !important;
 }
 .fw-bold {
   font-weight: bold !important;
@@ -233,18 +232,18 @@
 }
 
 .decor-carousel-wrapper {
-    overflow: hidden; /* Ẩn các phần tử vượt ra ngoài */
-    width: 100%;
-    position: relative;
+  overflow: hidden; /* Ẩn các phần tử vượt ra ngoài */
+  width: 100%;
+  position: relative;
 }
 
 .decor-carousel {
-    display: flex; /* Sắp xếp các sản phẩm theo hàng ngang */
-    width: 100%; /* Đảm bảo chiều rộng đủ cho tất cả sản phẩm */
-    transition: transform 0.5s ease; /* Hiệu ứng trượt mượt mà */
-    position: relative; /* Đặt làm tham chiếu cho các phần tử con */
-    scroll-snap-type: x mandatory; /* Giữ snap nếu cần */
-    -webkit-overflow-scrolling: touch; /* Tối ưu cho cảm ứng */
+  display: flex; /* Sắp xếp các sản phẩm theo hàng ngang */
+  width: 100%; /* Đảm bảo chiều rộng đủ cho tất cả sản phẩm */
+  transition: transform 0.5s ease; /* Hiệu ứng trượt mượt mà */
+  position: relative; /* Đặt làm tham chiếu cho các phần tử con */
+  scroll-snap-type: x mandatory; /* Giữ snap nếu cần */
+  -webkit-overflow-scrolling: touch; /* Tối ưu cho cảm ứng */
 }
 
 /* Media Queries cho các kích thước màn hình */
@@ -362,51 +361,51 @@
   }
 }
 .product-popup {
-    display: none;
-    position: absolute;
-    background: #f7f5f5;
-    padding: 10px;
-    border: 1px solid #ddd;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-    z-index: 1000;
-    max-width: 400px; /* Giữ chiều rộng đủ để hiển thị */
-    border-radius: 8px; /* Bo góc giống hình */
-    background-color: rgba(253, 247, 247, 0.1); /* Nền xám nhạt giống hình */
-    font-size: 14px;
-    display: flex; /* Sử dụng flex để sắp xếp ngang */
-    align-items: center; /* Căn giữa theo chiều dọc */
-    gap: 10px; /* Khoảng cách giữa ảnh và thông tin */
+  display: none;
+  position: absolute;
+  background: #f7f5f5;
+  padding: 10px;
+  border: 1px solid #ddd;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+  max-width: 400px; /* Giữ chiều rộng đủ để hiển thị */
+  border-radius: 8px; /* Bo góc giống hình */
+  background-color: rgba(253, 247, 247, 0.1); /* Nền xám nhạt giống hình */
+  font-size: 14px;
+  display: flex; /* Sử dụng flex để sắp xếp ngang */
+  align-items: center; /* Căn giữa theo chiều dọc */
+  gap: 10px; /* Khoảng cách giữa ảnh và thông tin */
 }
 
 .product-popup img {
-    max-width: 100px;
-    max-height: 100px;
-    margin: 0;
-    border-radius: 4px; /* Bo góc nhẹ cho ảnh */
+  max-width: 100px;
+  max-height: 100px;
+  margin: 0;
+  border-radius: 4px; /* Bo góc nhẹ cho ảnh */
 }
 
 .product-popup .popup-product-details {
-    flex: 1; /* Cho phép phần thông tin chiếm không gian còn lại */
-    display: flex; /* Sắp xếp tên và giá ngang hàng */
-    flex-direction: column; /* Sắp xếp tên và giá theo cột */
-    justify-content: center; /* Căn giữa theo chiều dọc */
+  flex: 1; /* Cho phép phần thông tin chiếm không gian còn lại */
+  display: flex; /* Sắp xếp tên và giá ngang hàng */
+  flex-direction: column; /* Sắp xếp tên và giá theo cột */
+  justify-content: center; /* Căn giữa theo chiều dọc */
 }
 
 .product-popup .popup-product-details h4 {
-    margin: 0 0 5px 0;
-    font-size: 16px;
-    color: #333;
-    white-space: normal; /* Cho phép xuống dòng */
-    overflow: visible; /* Không cắt chữ */
-    text-overflow: clip; /* Không dùng ellipsis */
-    max-width: 250px; /* Đảm bảo tên hiển thị đầy đủ */
-    line-height: 1.2; /* Đảm bảo dòng chữ dễ đọc */
+  margin: 0 0 5px 0;
+  font-size: 16px;
+  color: #333;
+  white-space: normal; /* Cho phép xuống dòng */
+  overflow: visible; /* Không cắt chữ */
+  text-overflow: clip; /* Không dùng ellipsis */
+  max-width: 250px; /* Đảm bảo tên hiển thị đầy đủ */
+  line-height: 1.2; /* Đảm bảo dòng chữ dễ đọc */
 }
 
 .product-popup .popup-product-details p {
-    margin: 0;
-    color: #dc3545; /* Màu đỏ cho giá giống hình */
-    font-weight: bold;
-    font-size: 16px;
-    white-space: nowrap; /* Giữ giá trên một dòng */
+  margin: 0;
+  color: #dc3545; /* Màu đỏ cho giá giống hình */
+  font-weight: bold;
+  font-size: 16px;
+  white-space: nowrap; /* Giữ giá trên một dòng */
 }

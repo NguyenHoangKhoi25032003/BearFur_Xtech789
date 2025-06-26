@@ -1,70 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Introduce</title>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.2/p5.min.js"></script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="assets/css/system/index.css">
-</head>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="assets/css/system/index.css" />
+  </head>
 
-<body>
+  <body>
     <div id="header"></div>
     <section class="about-hero">
-        <div class="about-hero-content">
-            <h1>Hệ thống</h1>
-            <p><a href="/">Trang chủ</a> &nbsp;›&nbsp; <span>Hệ thống</span></p>
-        </div>
+      <div class="about-hero-content">
+        <h1>Hệ thống</h1>
+        <p><a href="/">Trang chủ</a> &nbsp;›&nbsp; <span>Hệ thống</span></p>
+      </div>
     </section>
 
     <section class="store-locator">
-        <!-- 🔍 Thanh tìm kiếm ở đầu -->
-        <div class="store-search">
-            <input type="text" id="search-input" placeholder="Nhập tên cửa hàng" />
+      <!-- 🔍 Thanh tìm kiếm ở đầu -->
+      <div class="store-search">
+        <input type="text" id="search-input" placeholder="Nhập tên cửa hàng" />
 
-            <select id="province-filter">
-                <option value="">Chọn tỉnh thành</option>
-                <option value="Hồ Chí Minh">Hồ Chí Minh</option>
-                <option value="Bình Dương">Bình Dương</option>
-                <option value="Cần Thơ">Cần Thơ</option>
-                <option value="Hà Nội">Hà Nội</option>
-            </select>
+        <select id="province-filter">
+          <option value="">Chọn tỉnh thành</option>
+          <option value="Hồ Chí Minh">Hồ Chí Minh</option>
+          <option value="Bình Dương">Bình Dương</option>
+          <option value="Cần Thơ">Cần Thơ</option>
+          <option value="Hà Nội">Hà Nội</option>
+        </select>
 
-            <select id="district-filter">
-                <option value="">Chọn quận/huyện</option>
-            </select>
+        <select id="district-filter">
+          <option value="">Chọn quận/huyện</option>
+        </select>
+      </div>
+
+      <!-- 📦 Nội dung chia 2 cột: danh sách và bản đồ -->
+      <div
+        class="store-content"
+        style="display: flex; gap: 24px; flex-wrap: wrap"
+      >
+        <!-- Danh sách cửa hàng -->
+        <div class="store-sidebar" id="store-list">
+          <!-- Mỗi .store-item sẽ được render hoặc thêm từ JS -->
         </div>
 
-        <!-- 📦 Nội dung chia 2 cột: danh sách và bản đồ -->
-        <div class="store-content" style="display: flex; gap: 24px; flex-wrap: wrap;">
-            <!-- Danh sách cửa hàng -->
-            <div class="store-sidebar" id="store-list">
-                <!-- Mỗi .store-item sẽ được render hoặc thêm từ JS -->
-            </div>
-
-            <!-- Bản đồ -->
-            <div class="store-map">
-                <iframe id="map-frame" src="https://www.google.com/maps?q=70+Lữ+Gia,+TP.HCM&output=embed"></iframe>
-            </div>
+        <!-- Bản đồ -->
+        <div class="store-map">
+          <iframe
+            id="map-frame"
+            src="https://www.google.com/maps?q=70+Lữ+Gia,+TP.HCM&output=embed"
+          ></iframe>
         </div>
+      </div>
     </section>
 
-      <div id="footer"></div>
+    <div id="footer"></div>
 
     <script>
-        fetch("footer.html")
-            .then((res) => res.text())
-            .then((data) => (document.getElementById("footer").innerHTML = data));
+      fetch('footer.html')
+        .then((res) => res.text())
+        .then((data) => (document.getElementById('footer').innerHTML = data));
     </script>
     <script>
-        fetch("header.html")
-            .then((res) => res.text())
-            .then((data) => (document.getElementById("header").innerHTML = data));
+      fetch('header.html')
+        .then((res) => res.text())
+        .then((data) => {
+          document.getElementById('header').innerHTML = data;
+          // Chạy lại JS sau khi header được gắn
+          const script = document.createElement('script');
+          script.src = 'main.js';
+          document.body.appendChild(script);
+        });
     </script>
     <script src="assets/js/system/system.js"></script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap" async defer></script>
-</body>
-
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap"
+      async
+      defer
+    ></script>
+  </body>
 </html>
