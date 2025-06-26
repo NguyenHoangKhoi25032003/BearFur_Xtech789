@@ -77,3 +77,54 @@
   color: #222;
   font-weight: 600;
 }
+/* Responsive cho ảnh và bố cục */
+.about-content img {
+  width: 100%;
+  height: auto;
+  margin-top: 20px;
+  display: block;
+  border-radius: 8px;
+}
+
+/* Responsive cho màn hình nhỏ */
+@media (max-width: 768px) {
+  .about-hero h1 {
+    font-size: 28px;
+  }
+
+  .about-hero p {
+    font-size: 14px;
+  }
+
+  .about-content {
+    padding: 40px 15px;
+  }
+
+  .about-content .container {
+    font-size: 15px;
+    line-height: 1.6;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-hero {
+    height: 180px;
+    padding: 10px;
+  }
+
+  .about-hero h1 {
+    font-size: 24px;
+  }
+
+  .about-hero p {
+    font-size: 12px;
+  }
+
+  .about-content {
+    padding: 30px 10px;
+  }
+
+  .about-content .container {
+    font-size: 14px;
+  }
+}

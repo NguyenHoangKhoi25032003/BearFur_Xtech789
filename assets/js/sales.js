@@ -34,8 +34,8 @@ document.addEventListener('DOMContentLoaded', () => {
     {
       name: 'Bàn chay 1 tầng chất liệu MDF',
       description: 'Kệ treo tường 1 tầng chất liệu MDF',
-      price: 153000,
-      originalPrice: 230000,
+      price: 1530000,
+      originalPrice: 2300000,
       discount: 34,
       sold: 129,
       image: 'assets/img/pro_4.webp',
@@ -64,7 +64,7 @@ document.addEventListener('DOMContentLoaded', () => {
     },
     {
       name: 'Đèn chùm thạch sàn mạt đá chuên',
-      description: 'Đèn chùm thạch sàn mạt ',
+      description: 'Đèn chùm thạch sàn mạt MDF',
       price: 1750000,
       originalPrice: 2055000,
       discount: 15,
@@ -75,8 +75,8 @@ document.addEventListener('DOMContentLoaded', () => {
     {
       name: 'Bàn chay 1 tầng chất liệu MDF',
       description: 'Kệ treo tường 1 tầng chất liệu MDF',
-      price: 153000,
-      originalPrice: 230000,
+      price: 1530000,
+      originalPrice: 2300000,
       discount: 34,
       sold: 129,
       image: 'assets/img/pro_4.webp',

@@ -76,5 +76,48 @@
           document.body.appendChild(script);
         });
     </script>
+    <script>
+      function initCartCount() {
+        let count = localStorage.getItem('cartCount');
+        if (!count) {
+          count = 0;
+          localStorage.setItem('cartCount', count);
+        }
+        updateCartCountUI(count);
+      }
+
+      function updateCartCountUI(count) {
+        const cartSpan = document.querySelector('#cart-count');
+        if (cartSpan) cartSpan.innerText = count;
+      }
+
+      function increaseCartCount() {
+        let count = localStorage.getItem('cartCount') || '0';
+        count = parseInt(count) + 1;
+        localStorage.setItem('cartCount', count);
+        updateCartCountUI(count);
+      }
+
+      document.addEventListener('DOMContentLoaded', () => {
+        initCartCount();
+
+        document
+          .querySelector('.add-to-cart')
+          ?.addEventListener('click', () => {
+            increaseCartCount();
+          });
+      });
+    </script>
+    <!-- <script>
+      document.addEventListener('DOMContentLoaded', () => {
+        initCartCount();
+
+        document
+          .querySelector('.add-to-cart')
+          ?.addEventListener('click', () => {
+            increaseCartCount();
+          });
+      });
+    </script> -->
   </body>
 </html>

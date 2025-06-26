@@ -346,17 +346,14 @@ body {
 }
 
 @media (max-width: 480px) {
-  .auth-container {
-    padding: 15px 10px;
-  }
-
   .login-tabs {
-    flex-direction: column;
+    flex-direction: row !important;
     align-items: center;
+    justify-content: center;
   }
 
   .login-tabs .tab {
-    width: 100%;
+    width: auto !important;
     text-align: center;
   }
 }

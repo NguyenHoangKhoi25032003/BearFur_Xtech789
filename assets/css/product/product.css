@@ -524,6 +524,11 @@ body {
   background: #e68d5a;
 }
 @media (max-width: 768px) {
+  .product-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px; /* tạo khoảng cách giữa tiêu đề và phần sort */
+  }
   .product-sidebar {
     display: none !important;
   }

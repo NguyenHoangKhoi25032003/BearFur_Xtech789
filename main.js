@@ -147,6 +147,43 @@ document.addEventListener('click', (e) => {
     dropdown.style.display = 'none';
   }
 });
+// Khởi tạo bộ đếm khi header được tải
+function initCartCount() {
+  let count = localStorage.getItem('cartCount');
+  if (!count) {
+    count = 0;
+    localStorage.setItem('cartCount', count);
+  }
+  updateCartCountUI(count);
+}
+
+function updateCartCountUI(count) {
+  const cartSpan = document.querySelector('#cart-count');
+  if (cartSpan) cartSpan.innerText = count;
+}
+
+function increaseCartCount() {
+  let count = localStorage.getItem('cartCount');
+  count = parseInt(count || '0') + 1;
+  localStorage.setItem('cartCount', count);
+  updateCartCountUI(count);
+}
+
+// Gọi lại sau khi header load xong
+document.addEventListener('DOMContentLoaded', () => {
+  initCartCount();
+
+  document.querySelector('.add-to-cart')?.addEventListener('click', () => {
+    increaseCartCount();
+  });
+
+  // Cho nút trong product sales
+  document.querySelectorAll('.more-btn').forEach((btn) => {
+    btn.addEventListener('click', () => {
+      increaseCartCount();
+    });
+  });
+});
 
 document.addEventListener('DOMContentLoaded', () => {
   const searchIcon = document.querySelector('.search-icon');
