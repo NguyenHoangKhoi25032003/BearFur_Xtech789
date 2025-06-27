@@ -10,7 +10,7 @@ body {
 }
 
 .about-hero {
-  background-image: url('/assets/img/breadcrumb.jpg');
+  background-image: url('assets/img/breadcrumb.jpg');
   /* ✅ Đường dẫn ảnh nền */
   background-size: cover;
   background-position: center;
@@ -269,6 +269,9 @@ body {
     justify-content: center;
     margin-top: 1rem;
     margin-bottom: 1rem;
+  }
+  .container {
+    width: 95vw;
   }
 } /* Giao diện mặc định */
 .product-thumbs {
