@@ -1,5 +1,5 @@
 .about-hero {
-  background-image: url('/assets/img/breadcrumb.jpg'); /* ✅ Đường dẫn ảnh nền */
+  /* background-image: url('/assets/img/breadcrumb.jpg'); */
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
